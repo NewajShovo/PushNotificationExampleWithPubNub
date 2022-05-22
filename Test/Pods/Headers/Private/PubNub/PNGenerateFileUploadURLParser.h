@@ -1,0 +1,1 @@
+../../../PubNub/PubNub/Network/Parsers/Files/PNGenerateFileUploadURLParser.h

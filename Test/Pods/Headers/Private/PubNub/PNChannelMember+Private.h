@@ -1,0 +1,1 @@
+../../../PubNub/PubNub/Data/Models/PNChannelMember+Private.h

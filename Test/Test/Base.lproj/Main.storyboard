@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzd-v9-dmg">
+                                <rect key="frame" x="117" y="407.66666666666669" width="180" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qzd-v9-dmg" secondAttribute="height" multiplier="180:31" id="siL-ld-tFz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Publish"/>
+                                <connections>
+                                    <action selector="publishMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCP-u6-OMW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Publish Text" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rip-Ig-axO">
+                                <rect key="frame" x="117" y="373.66666666666669" width="180" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Z1-i8-coe">
+                                <rect key="frame" x="117" y="275.66666666666669" width="180" height="34"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Received Text" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ySI-7b-ibU">
+                                <rect key="frame" x="117" y="309.66666666666669" width="180" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Z1-i8-coe" firstAttribute="height" secondItem="ySI-7b-ibU" secondAttribute="height" id="0nM-uC-RGA"/>
+                            <constraint firstItem="0Z1-i8-coe" firstAttribute="trailing" secondItem="ySI-7b-ibU" secondAttribute="trailing" id="4bL-yg-bIb"/>
+                            <constraint firstItem="ySI-7b-ibU" firstAttribute="height" secondItem="Rip-Ig-axO" secondAttribute="height" id="Gkv-ss-F4R"/>
+                            <constraint firstItem="ySI-7b-ibU" firstAttribute="width" secondItem="Rip-Ig-axO" secondAttribute="width" id="Mbl-GW-AMt"/>
+                            <constraint firstItem="Rip-Ig-axO" firstAttribute="width" secondItem="qzd-v9-dmg" secondAttribute="width" id="OyL-wZ-Tfv"/>
+                            <constraint firstItem="ySI-7b-ibU" firstAttribute="leading" secondItem="Rip-Ig-axO" secondAttribute="leading" id="Vsa-B6-eBx"/>
+                            <constraint firstItem="0Z1-i8-coe" firstAttribute="leading" secondItem="ySI-7b-ibU" secondAttribute="leading" id="ZN7-xo-Ghc"/>
+                            <constraint firstItem="ySI-7b-ibU" firstAttribute="trailing" secondItem="Rip-Ig-axO" secondAttribute="trailing" id="aLX-Wd-95r"/>
+                            <constraint firstItem="Rip-Ig-axO" firstAttribute="top" secondItem="ySI-7b-ibU" secondAttribute="bottom" constant="30" id="bbG-bT-rvV"/>
+                            <constraint firstItem="qzd-v9-dmg" firstAttribute="top" secondItem="Rip-Ig-axO" secondAttribute="bottom" id="csa-Q7-ynb"/>
+                            <constraint firstItem="qzd-v9-dmg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.434783" id="fII-5b-WFV"/>
+                            <constraint firstItem="0Z1-i8-coe" firstAttribute="width" secondItem="ySI-7b-ibU" secondAttribute="width" id="gwg-6P-H4B"/>
+                            <constraint firstItem="Rip-Ig-axO" firstAttribute="trailing" secondItem="qzd-v9-dmg" secondAttribute="trailing" id="kVo-DY-079"/>
+                            <constraint firstItem="Rip-Ig-axO" firstAttribute="height" secondItem="qzd-v9-dmg" secondAttribute="height" multiplier="1.09677" id="sKA-ba-oHz"/>
+                            <constraint firstItem="qzd-v9-dmg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sfY-a9-wPd"/>
+                            <constraint firstItem="Rip-Ig-axO" firstAttribute="leading" secondItem="qzd-v9-dmg" secondAttribute="leading" id="twV-NV-d1g"/>
+                            <constraint firstItem="ySI-7b-ibU" firstAttribute="top" secondItem="0Z1-i8-coe" secondAttribute="bottom" id="x0n-CK-YOo"/>
+                            <constraint firstItem="qzd-v9-dmg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.15" id="zj0-Ko-96R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="publishTextfield" destination="Rip-Ig-axO" id="mTI-pp-3us"/>
+                        <outlet property="receiveTextField" destination="ySI-7b-ibU" id="qAC-Kv-8ow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
