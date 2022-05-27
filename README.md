@@ -36,7 +36,7 @@ This repo is created to help people to get accustomed to the push notification i
 ```
 # Point to be noted for Test Payload format
 
-1. I have followed exactly this format and got succeeded receiving push notification.
-2. Environment has to mentioned accordingly (Production should be used when necessary), topic should match the bundel identifier of the application, and version should be v2 (if pubnub is configured with the new apns2 key)
+1. I have followed exactly this format and got succeess in receiving push notification.
+2. Environment has to be mentioned accordingly (Production should be used when testing from testflight), topic should match the bundel identifier of the application, and version should be v2 (if pubnub is configured with the new apns2 key)
 
 
