@@ -1,5 +1,5 @@
 # PushNotificationExampleWithPubNub
-This repo is created to help people to get accustomed to the push notification issue with pubnub
+This repo is for all the findings about push notification.
 
 # Findings related configuring pubnub into an iOS application
 
